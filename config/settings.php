@@ -5,7 +5,7 @@ return [
     /*
      * Is email activation required
      */
-    'activation' => env('ACTIVATION', false),
+    'activation' => env('ACTIVATION', true),
 
     /*
      * Is email activation required
@@ -45,6 +45,6 @@ return [
     /*
      * Google Maps API V3 Status
      */
-    'googleMapsAPIStatus' => env('GOOGLEMAPS_API_STATUS', false),
+    'googleMapsAPIStatus' => env('GOOGLEMAPS_API_STATUS', true),
 
 ];

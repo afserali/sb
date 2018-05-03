@@ -1,0 +1,63 @@
+/* body { font-size: 14px; line-height: 1.6em; margin: 0; padding: 0; } */
+/* .container { width: 800px; margin: 0 auto; } */
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-no-suggestion { padding: 2px 5px;}
+.autocomplete-selected { background: rgba(105, 108, 109, 0.35); }
+.autocomplete-suggestions strong { font-weight: bold; color: #000; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { font-weight: bold; font-size: 16px; color: #000; display: block; border-bottom: 1px solid #000; }
+
+
+.scroll {
+    width: 91%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 30s linear infinite;
+    padding:0;
+}
+
+@keyframes marquee {
+    0%   { text-indent: 80em }
+    100% { text-indent: -160em }
+}
+
+.wrapper {
+   padding-left: 0em;
+   position: relative;
+   background-color: rgb(42, 51, 58);
+   height: 29px;
+   padding-top:2px;
+}
+
+.wrapper:after, .wrapper::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 0em; 
+    height: 1.5em;
+    background-image: linear-gradient(90deg, white 70%, rgba(255,255,255,0));
+}
+
+/* .wrapper_scroll {
+  overflow: hidden;
+  height: 25px;
+  position: absolute;
+  margin: 0;
+  width : auto;
+  line-height: 25px;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+} */
+
+/* input { font-size: 28px; padding: 10px; border: 1px solid #CCC; display: block; } */

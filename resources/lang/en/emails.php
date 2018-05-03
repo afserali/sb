@@ -23,6 +23,18 @@ return [
     'activationMessage'  => 'You need to activate your email before you can start using all of our services.',
     'activationButton'   => 'Activate',
     'activationThanks'   => 'Thank you for using our application!',
+	
+	
+	    /*
+     * GetActivate new user account email.
+     *
+     */
+
+    'quoteSubject'  => 'Thank you for Get Quote',
+    'quoteGreeting' => 'Welcome!',
+    'quoteMessage'  => 'Your request for Quote has been submitted successfully our team will contact you soon.',
+    'quoteButton'   => 'Activate',
+    'quoteThanks'   => 'Thank you for using our application!',
 
     /*
      * Goobye email.

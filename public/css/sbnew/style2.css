@@ -1,0 +1,140 @@
+* {
+margin:0;
+padding:0;
+}
+
+html,body {
+overflow-x:hidden;
+}
+
+body {
+width:100%;
+color:#949494;
+background-color:#fff;
+font-size:16px;
+line-height:1.6em;
+font-weight:400;
+background-repeat:no-repeat;
+background-position:center center;
+background-attachment:fixed;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+margin:0;
+}
+
+body.loaded {
+overflow:auto;
+}
+
+body.loaded .section-intro {
+opacity:0;
+z-index:-1;
+transform:translateY(-50%);
+-ms-transform:translateY(-50%);
+-webkit-transform:translateY(-50%);
+-moz-transform:translateY(-50%);
+-o-transform:translateY(-50%);
+-webkit-transition:1s cubic-bezier(.77,0,.175,1).2s;
+transition:1s cubic-bezier(.77,0,.175,1).2s;
+}
+
+body.loaded .section-intro .logo {
+-webkit-transition:1s cubic-bezier(.77,0,.175,1).2s;
+transition:1s cubic-bezier(.77,0,.175,1).2s;
+-webkit-transform:translate(-50%,50%);
+-moz-transform:translate(-50%,50%);
+-ms-transform:translate(-50%,50%);
+transform:translate(-50%,50%);
+-o-transform:translate(-50%,50%);
+}
+
+.section-intro .logo {
+position:absolute;
+top:50%;
+left:50%;
+-webkit-transform:translate(-50%,-50%);
+-ms-transform:translate(-50%,-50%);
+-moz-transform:translate(-50%,-50%);
+-o-transform:translate(-50%,-50%);
+transform:translate(-50%,-50%);
+}
+
+.section-intro {
+position:fixed;
+top:0;
+left:0;
+right:0;
+height:100%;
+-webkit-transform:translateY(0);
+-ms-transform:translateY(0);
+-moz-transform:translateY(0);
+-o-transform:translateY(0);
+transform:translateY(0);
+z-index:999999999;
+}
+
+body.loaded .section-hero {
+-webkit-transition:0 1s cubic-bezier(.77,0,.175,1).2s;
+transition:transform 1s cubic-bezier(.77,0,.175,1).2s;
+-webkit-transform:translateY(0);
+-ms-transform:translateY(0);
+-o-transform:translateY(0);
+-moz-transform:translateY(0);
+transform:translateY(0);
+}
+
+.section-hero {
+position:relative;
+overflow:hidden;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+display:block;
+}
+
+.flickity-prev-next-button:hover,.section-intro,hr {
+background:#fff;
+}
+
+section {
+text-align:center;
+background-color:#fff;
+}
+
+.nav.nav-pills.nav-justified {
+padding-bottom:60px;
+}
+
+/*Yogapriya Added css style for geta quote Error Message*/
+#destinationCountrySpan,#departureCountrySpan{
+    background: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    padding: 0PX 13PX;
+    margin-top: 2px;
+    line-height: 15px;
+}
+#departureCountrySpanFCL,#destinationCountrySpanFCL{
+    background: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    padding: 0PX 13PX;
+    margin-top: 2px;
+    line-height: 15px;
+}
+.infclOrigin{
+    float:left;
+    width:100%;
+    margin-bottom: 10px;
+}

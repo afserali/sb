@@ -7,6 +7,7 @@
     "require": {
         "php": ">=7.1.3",
         "barryvdh/laravel-debugbar": "^3.0",
+        "box/spout": "^2.7",
         "creativeorange/gravatar": "~1.0",
         "doctrine/dbal": "^2.5",
         "fideloper/proxy": "~4.0",
@@ -24,13 +25,16 @@
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.5",
+        "maatwebsite/excel": "~2.1.0",
         "pusher/pusher-php-server": "^3.0",
+        "rap2hpoutre/fast-excel": "^0.1.3",
         "rap2hpoutre/laravel-log-viewer": "^0.10.4",
         "socialiteproviders/37signals": "^3.0",
         "socialiteproviders/generators": "^2.0",
         "socialiteproviders/instagram": "^3.0",
         "socialiteproviders/twitch": "^3.0",
-        "socialiteproviders/youtube": "^3.0"
+        "socialiteproviders/youtube": "^3.0",
+        "yajra/laravel-datatables-oracle": "~8.0"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

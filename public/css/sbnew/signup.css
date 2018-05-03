@@ -1,0 +1,474 @@
+#container1{
+	padding:0px !important;
+	margin:0px !important;
+}
+.platregtxt{
+	width:100%;
+	float:left;
+}
+.platreg{
+	border: 0px solid;
+    float: right;
+    padding: 5px;
+    background: #ED2623;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+.platsign-img{
+	background: url(/../images/sbnew/sbbg-image.jpg) no-repeat;
+    width: 100%;
+    background-size: 100% 100%;
+    float: left;
+    min-height: 637px;
+}
+.platsign-box {
+    border: 0px solid #ccc;
+    width: 70%;
+    /*height: 500px;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+.platsign-left{
+	border: 0px solid #fff;
+	width: 50%;
+    float: left;
+    height: 580px;
+    background: url(/../images/sbnew/sbsignup-image.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.plansign-dtl{
+	border: 0px solid #ccc;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+   /*  height: 500px; */
+}
+.plat-afblogo{
+	text-align: center;
+    margin-top: 50px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.platsign-soc{
+	text-align: center;
+    margin-top: 100px;
+    font-size: 18px;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+}
+.plat-bck{
+	float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+	cursor: pointer;
+}
+.plansign-right{
+	/* border: 0px solid #2F436E; */
+   	background: #fff;
+    width: 50%;
+    float: right;
+    height: 580px;
+}
+.plansign-rdtl{
+	border: 0px solid #ccc;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    margin-top: 15px;
+}
+.plan-signnew{
+    float: left;
+    width: 100%;
+    color:#3D5382;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.planentry-dtls{
+	float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.formColor{
+	width: 100% !important;
+    height: 35px !important;
+    background: none !important;
+    border: 1px solid #3D5382 !important;
+    padding-left: 7px !important;
+    color: #3D5382 !important;
+    border-radius: 3px !important;
+}
+.register_select{
+	width: 98%;
+    height: 35px;
+    background: none;
+    border: 1px solid #3D5382;
+    padding-left: 7px;
+    color: #3D5382;
+    border-radius: 3px;
+    font-size:14px;
+}
+ ::-webkit-input-placeholder { 
+  font-size:14px;
+} 
+.plan-subbtn{
+	width:100%;
+	float:left;
+}
+.plan-sub{
+	background:#90C54D !important;
+	color:#fff;
+	border:0px solid !important;
+	border-radius:3px;
+	width:100%;
+	float:left;
+	height:35px;
+	font-size:16px;
+}
+.ortxt, .allogtxt{
+	float: left;
+    width: 100%;
+    text-align: center;
+}
+.ortxt{
+	margin-top:	5px;
+}
+.ortxt p, .allogtxt p{
+	margin:0px;
+}
+.login-txt{
+	color:#90C54D;
+	font-weight: bold;
+	cursor: pointer;
+}
+.login-txt:hover{
+	color:#90C54D;
+}
+.home-image{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.plan-sub:hover{
+	color:#fff;
+}
+.mobile-input{
+	height: 35px;
+    background: none;
+    border: 1px solid #3D5382;
+    padding-left: 7px;
+    color: #3D5382;
+    border-radius: 3px;
+    font-size:14px;
+    width:100%;
+}
+.mobile-select{
+	width:100%;
+	height: 35px;
+    background: none;
+    border: 1px solid #3D5382;
+    padding-left: 7px;
+    color: #3D5382;
+    border-radius: 3px;
+    font-size:14px;
+}
+.mob-select{
+	float: left;
+    width: 16%;
+    margin-right: 9px;
+}
+.mob-number{
+	float: left;
+    width: 80%;
+    height: 35px;
+}
+.mob-form{
+	width:100%;
+	float:left;
+}
+#platsign-form > .planentry-dtls > .form-group > label.error {
+    font-size: 13px !important;
+    font-weight: normal;
+    text-align: left;
+    float: left;
+    top: 5px;
+    left: 0px;
+    margin: 0px;
+    position: relative;
+    padding: 0px 5px;
+    line-height: 5px;
+    color:red;
+  }
+  #platsign-form > .planentry-dtls > .form-group > span > label.error {
+    font-size: 13px !important;
+    font-weight: normal;
+    text-align: left;
+    float: left;
+    top: 5px;
+    left: 0px;
+    margin: 0px;
+    position: relative;
+    padding: 0px 5px;
+    line-height: 5px;
+    color:red;
+  }
+ #signupPtag{
+  	display: none;
+  }
+  .newSignupLink{
+  	color:#90c54d;
+  	font-weight: bold;
+  	cursor: pointer;
+  }
+  .loginSignUp{
+  	display: none;
+  }
+  .loginSignUp #sb-login input{
+  	border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid #3D5382;
+    border-right:none;
+    height: 35px;
+    color: #000;
+  }
+  .loginSignUp #sb-login .input-group > .input-group-addon{
+  	background: #8EC448 !important;
+    border: 0px;
+    color: #fff;
+  }
+   .loginSignUp #sb-login .input-group{
+   	margin-bottom:20px;
+   }
+   .sb-loginbtn .sb-login{
+   	width:100%;
+   	float:left;
+   	background: #8EC448 !important;
+    border: 0px;
+    color:#fff;
+   }
+   .welText, .forgetText{
+   	float:left;
+   	width:100%;
+   	text-align: center;
+   	color: #3D5382;
+   	margin-bottom: 10px;
+   }
+   .loginSignUp{
+   	padding-top: 45px;
+   }
+   .forget-txt{
+   	float: right;
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+   }
+ .loginSignUp #sb-login > .input-group > .chck-input > input[type="checkbox"] {
+    display: block !important;
+	}
+ .chck-input {
+    width: 6%;
+    float: left;
+  }
+  .chck-text{
+  	padding-top: 9px;
+  }
+  .divInput{
+  	float: left;
+  	width: 100%;
+  }
+  .inputGrp{
+  	float: left;
+  	width: 100%;
+  	height:35px;
+  }
+  .divInput > .inputGrp > input{
+  	float:left;
+  	width:90%;
+  	height:35px;
+  }
+  .iconDiv {
+    width: 10% !important;
+    float: right !important;
+    height: 35px !important;
+    padding-top: 9px; 
+    color:#fff;
+    background: #90c54d;
+     border:1px solid #90c54d; 
+    border-top-right-radius:4px !important;
+    border-bottom-right-radius:4px !important;
+ }
+ label.error{
+ 	color: red;
+    font-size: 13px;
+ }
+ .forgetPwdSection{
+ 	display: none;
+ }
+ #frgtLoginLink{
+ 	display:none;
+ }
+ .hintBox{
+ 	float: left;
+    width: 28%;
+    margin-left: 8px;
+ }
+ .hintBtn{
+   width: 100%;
+   float: left;
+   background: #90c54d;
+   border:1px solid #90c54d;
+   color:#fff;
+ }
+ .forgetPwdSection .divInput{
+ 	height:35px;
+ 	margin-bottom: 20px;
+ 	
+ }
+ .forgetPwdSection .divInput .inputGrp input{
+ 	border: 1px solid #2c3a5d;
+ 	border-radius:4px;
+ }
+.forgetPwdSection .divInput .secInput{
+	    width: 70%;
+}
+.submitClearDiv{
+	float:left;
+	width:100%;
+	margin-top:10px;
+} 
+.frgtSubBtn{
+   background: #90c54d;
+   border:1px solid #90c54d;
+   color:#fff;
+   float:left;
+   width:50%;
+}
+.frgtClrBtn{
+	background: #90c54d;
+   border:1px solid #90c54d;
+   color:#fff;
+   width:47%;
+   margin-left:10px;
+   float:left;
+}
+#forgetLink, #frgtLoginLink{
+	cursor: pointer;
+}
+.fbbgcolor{
+    background: #3A559F;
+    border-radius: 50% !important;
+    color: #fff;
+    height: 35px;
+    width: 35px !important;
+    padding-left: 12px !important;
+    padding-top: 6px !important;
+    margin-right: 10px !important;
+    display: inline-block !important;
+}
+.twitbgcolor{
+     background: #1CB7EB !important;
+    border-radius: 50% !important;
+    color: #fff;
+    height: 35px;
+    width: 35px !important;
+    padding-left: 10px !important;
+    padding-top: 5px !important;
+     margin-right: 10px !important;
+     display: inline-block !important;
+}
+.goobgcolor{
+     background: #FF0000;
+    border-radius: 50% !important;
+    color: #fff !important;
+    height: 35px;
+    width: 35px !important;
+    padding-left: 7px !important;
+    padding-top: 5px !important;
+    display: inline-block !important;
+}
+.fbbgcolor i:hover, .twitbgcolor i:hover, .goobgcolor i:hover,
+.fbbgcolor i:active, .twitbgcolor i:active, .goobgcolor i:active,
+.fbbgcolor i:focus, .twitbgcolor i:focus, .goobgcolor i:focus{
+    color:#fff !important;
+}
+.signupSocial{
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 65px;
+}
+.iconSignup{
+    text-align: center;
+}
+.forget-txt, .loginLink-txt, .newSignup{
+    display: none;
+}
+.loginLink-txt,.forget-txt{
+    float: left;
+    width: 100%;
+    text-align: right;
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.newSignup{
+    float: left;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.newSignup p{
+    color: #000;
+}
+#newSignupregister{
+    color:#90c54d;
+    font-weight: 600;
+}
+.welcomeTxt{
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.text-center{
+    text-align: center;
+    float:left;
+    width: 100%;
+    color:#000;
+}
+.forgetPwdSection{
+    float: left;
+    padding-top: 45px;
+}
+.checkDiv{
+    margin-bottom: 0px !important;
+}
+.btn:hover, .btn:active{
+    color:#fff !important;
+}
+.fmailIconbg{
+    background: #90c54d !important;
+    color: #fff !important;
+    padding-top: 8px !important;
+    border: 1px solid #90c54d !important;
+}
+.orSignupTxt {
+    margin-bottom: 0px !important;
+}
+.signupHome{
+    float: left;
+    width:100%;
+    text-align: center;
+}
+.signupOrlg{
+    float: left;
+    width:100%;
+    text-align: center;
+    padding-top: 5px !important;
+}

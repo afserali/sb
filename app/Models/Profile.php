@@ -27,6 +27,7 @@ class Profile extends Model
      *
      * @var array
      */
+	
     protected $fillable = [
         'theme_id',
         'location',

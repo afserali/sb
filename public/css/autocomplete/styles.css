@@ -1,0 +1,110 @@
+/* body { font-size: 14px; line-height: 1.6em; margin: 0; padding: 0; } */
+/* .container { width: 800px; margin: 0 auto; } */
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);text-align: left; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-no-suggestion { padding: 2px 5px;}
+.autocomplete-selected { background: rgba(105, 108, 109, 0.35); }
+.autocomplete-suggestions strong { font-weight: bold; color: #000; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { font-weight: bold; font-size: 16px; color: #000; display: block; border-bottom: 1px solid #000; }
+
+#quote_btn2 .autocomplete-suggestions{
+		
+	height:150px !important;
+	background: rgba(38, 48, 84, 0.96);!important;
+	 color: #f1f1f1;
+	 margin-top:0px !important;
+	 width:310px !important;
+	}
+
+ #quote_btn2 .autocomplete-suggestion{
+   
+	padding: 0px 5px;
+    background: rgba(38, 48, 84, 0.96);
+    white-space: nowrap;
+    overflow: hidden;
+    text-align:left;
+    font-size: 13px;
+    color: /* #f1f1f1 */ #fff;
+	} 
+	#quote_btn2 .autocomplete-selected{
+	background: rgba(255, 255, 255, 0.35) /*rgb(216, 35, 34)*/ ;
+    color: #fff;
+	}
+	#quote_btn2 .autocomplete-suggestions strong {
+    font-weight: bold;
+    color: /* #8fa8e6 */ #fff;
+	}
+	
+/* getquote autocomplete css start */
+.page-title h1 {
+    font-size: 33px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    float: left;
+    text-align: left;
+}
+.scroll {
+    width: 91%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 30s linear infinite;
+    padding:0;
+}
+
+@keyframes marquee {
+    0%   { text-indent: 80em }
+    100% { text-indent: -160em }
+}
+
+.wrapper {
+   padding-left: 0em;
+   position: relative;
+   background-color: rgb(42, 51, 58);
+   height: 29px;
+   padding-top:2px;
+}
+
+.wrapper:after, .wrapper::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 0em; 
+    height: 1.5em;
+    background-image: linear-gradient(90deg, white 70%, rgba(255,255,255,0));
+}
+/*Yogapriya Added Css for autocomplete start*/
+#auto-complete-dropdown-departureFCL, #auto-complete-dropdown-destinationFCL{
+    color: #000;
+}
+.loginWtxt{
+    font-size:14px;
+    float: left;
+    width: 100%;
+    color:rgb(223, 217, 217);
+    margin-top: 5px;
+}
+/*Yogapriya Added Css for autocomplete end*/
+/* .wrapper_scroll {
+  overflow: hidden;
+  height: 25px;
+  position: absolute;
+  margin: 0;
+  width : auto;
+  line-height: 25px;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+} */
+
+/* input { font-size: 28px; padding: 10px; border: 1px solid #CCC; display: block; } */

@@ -28,5 +28,8 @@ return [
     'form_modal_default_message'    => 'Please Confirm',
     'form_modal_default_btn_cancel' => 'Cancel',
     'form_modal_default_btn_submit' => 'Confirm Submit',
+	
+	'edit_surcharge__modal_text_confirm_message' => 'Please confirm your changes.',
+	 'edit_surcharge__modal_text_confirm_title'   => 'Confirm Save',
 
 ];

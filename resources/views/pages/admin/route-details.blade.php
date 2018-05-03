@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-	Routing Information
+	Pages Information
 @endsection
 
 @section('content')

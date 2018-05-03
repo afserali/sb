@@ -19,9 +19,15 @@
             <span class="pull-right label label-primary" style="margin-top:4px">
             Admin Access
             </span>
-        @else
+         @endrole
+          @role('user', true)
             <span class="pull-right label label-warning" style="margin-top:4px">
             User Access
+            </span>
+        @endrole
+        @role('vendor', true)
+            <span class="pull-right label label-info" style="margin-top:4px">
+            Vendor Access
             </span>
         @endrole
 
@@ -31,15 +37,13 @@
             {{ trans('auth.loggedIn') }}
         </h2>
         <p>
-            <em>Thank you</em> for checking this project out. <strong>Please remember to star it!</strong>
+            <em>Thank you</em> for checking this project out. 
         </p>
 
-        <p>
-            <iframe src="https://ghbtns.com/github-btn.html?user=jeremykenedy&repo=laravel-auth&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px" style="margin: 0px 0 -3px .5em;"></iframe>
-        </p>
+       
 
         <p>
-            This page route is protected by <code>activated</code> middleware. Only accounts with activated emails are able pass this middleware.
+            This pages is protected by <code>activated</code> . Only accounts with activated emails are able pass this page.
         </p>
         <p>
             <small>
@@ -56,6 +60,9 @@
                 @endrole
                 @role('user')
                    User
+                @endrole
+                @role('vendor')
+                  Vendor
                 @endrole
             Access
         </h4>
@@ -89,34 +96,7 @@
 
             <hr>
 
-            <h4>
-                You have permissions:
-                @permission('view.users')
-                    <span class="label label-primary margin-half margin-left-0">
-                        {{ trans('permsandroles.permissionView') }}
-                    </span>
-                @endpermission
-
-                @permission('create.users')
-                    <span class="label label-info margin-half margin-left-0">
-                        {{ trans('permsandroles.permissionCreate') }}
-                    </span>
-                @endpermission
-
-                @permission('edit.users')
-                    <span class="label label-warning margin-half margin-left-0">
-                        {{ trans('permsandroles.permissionEdit') }}
-                    </span>
-                @endpermission
-
-                @permission('delete.users')
-                    <span class="label label-danger margin-half margin-left-0">
-                        {{ trans('permsandroles.permissionDelete') }}
-                    </span>
-                @endpermission
-
-            </h4>
-
+           
         @endrole
 
     </div>

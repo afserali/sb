@@ -6,7 +6,7 @@
 @endif
 
 @if (session('success'))
-  <div class="alert alert-success alert-dismissable fade in">
+  <div class="alert alert-success alert-dismissable fade in" data-auto-dismiss="2000">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <h4><i class="icon fa fa-check fa-fw" aria-hidden="true"></i> Success</h4>
     {{ session('success') }}

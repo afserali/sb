@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://shippingbazaar.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -171,6 +171,8 @@ return [
         App\Providers\LocalEnvironmentServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
         jeremykenedy\laravelexceptionnotifier\LaravelExceptionNotifier::class,
+		 Yajra\DataTables\DataTablesServiceProvider::class,
+		 Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
@@ -227,6 +229,8 @@ return [
         'Gravatar'     => Creativeorange\Gravatar\Facades\Gravatar::class,
         'Image'        => Intervention\Image\Facades\Image::class,
         'Uuid'         => Webpatser\Uuid\Uuid::class,
+		'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+		'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];

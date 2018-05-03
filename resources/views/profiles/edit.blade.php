@@ -108,7 +108,7 @@
 											</div>
 
 
-											<div class="form-group has-feedback {{ $errors->has('theme') ? ' has-error ' : '' }}">
+											<!--<div class="form-group has-feedback {{ $errors->has('theme') ? ' has-error ' : '' }}">
 												{!! Form::label('theme', trans('profile.label-theme') , array('class' => 'col-sm-4 control-label')); !!}
 												<div class="col-sm-6">
 
@@ -129,7 +129,7 @@
 											        @endif
 
 												</div>
-											</div>
+											</div> -->
 
 											<div class="form-group has-feedback {{ $errors->has('location') ? ' has-error ' : '' }}">
 												{!! Form::label('location', trans('profile.label-location') , array('class' => 'col-sm-4 control-label')); !!}

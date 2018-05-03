@@ -43,10 +43,10 @@ class UsersManagementController extends Controller
      */
     public function create()
     {
-        $roles = Role::all();
+        $region = Role::all();
 
         $data = [
-            'roles' => $roles,
+            'roles' => $region,
         ];
 
         return view('usersmanagement.create-user')->with($data);
@@ -66,6 +66,8 @@ class UsersManagementController extends Controller
                 'name'                  => 'required|max:255|unique:users',
                 'first_name'            => '',
                 'last_name'             => '',
+				'mobile'                 => 'required',
+				'countrycode'            => 'required',
                 'email'                 => 'required|email|max:255|unique:users',
                 'password'              => 'required|min:6|max:20|confirmed',
                 'password_confirmation' => 'required|same:password',
@@ -76,6 +78,8 @@ class UsersManagementController extends Controller
                 'name.required'       => trans('auth.userNameRequired'),
                 'first_name.required' => trans('auth.fNameRequired'),
                 'last_name.required'  => trans('auth.lNameRequired'),
+				'mobile.required' 	  => trans('auth.MobileRequired'),
+				'countrycode.required' 	  => trans('auth.countryCodeRequired'),
                 'email.required'      => trans('auth.emailRequired'),
                 'email.email'         => trans('auth.emailInvalid'),
                 'password.required'   => trans('auth.passwordRequired'),
@@ -97,6 +101,8 @@ class UsersManagementController extends Controller
             'first_name'       => $request->input('first_name'),
             'last_name'        => $request->input('last_name'),
             'email'            => $request->input('email'),
+			  'mobile'            => $request->input('mobile'),
+			  'countrycode'            => $request->input('countrycode'),
             'password'         => bcrypt($request->input('password')),
             'token'            => str_random(64),
             'admin_ip_address' => $ipAddress->getClientIp(),
@@ -184,6 +190,8 @@ class UsersManagementController extends Controller
         $user->name = $request->input('name');
         $user->first_name = $request->input('first_name');
         $user->last_name = $request->input('last_name');
+		  $user->mobile = $request->input('mobile');
+		   $user->countrycode = $request->input('countrycode');
 
         if ($emailCheck) {
             $user->email = $request->input('email');

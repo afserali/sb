@@ -1,0 +1,142 @@
+.infoSection{
+	float: left;
+    width: 65%;
+    border: 1px solid #ccc;
+    margin: 30px 172px;
+    padding: 20px 20px;
+}
+.infoHead{
+	text-align:center;
+	color: #1c3365;
+	font-size:15px;
+	font-weight:700;
+	padding-top: 22px;
+}
+.infoSection .input-group{
+	width:100%;
+	float:left;
+}
+.infoSection .input-group select, .infoSection .input-group input{
+	width:100%;
+	float:left;
+	height: 41px;
+    border-radius: 4px !important;
+	padding-left:10px !important;
+}
+.getDtlbtn{
+	color:#fff;
+	background:#8ec448;
+	float: left;
+	width: 100%;
+}
+.getDtlbtn:hover{
+	color:#fff;
+}
+.getDtlsection{
+	float:left;
+	width:100%;
+	margin-top:10px;
+}
+.getDtlsection{
+	display:none;
+}
+
+.nav-stacked li{
+	float:left;
+	width:100%;
+}
+.mDown{
+	float:right;
+	cursor:pointer;
+	
+}
+#subMaster{
+	width:100%;
+	float:left;
+	display:none;
+	padding-left: 45px;
+}
+#subMaster li{
+	float:left;
+	width:100%;
+	height:30px;
+	cursor:pointer;
+}
+.adminBg{
+	background:#fff;
+}
+#example_wrapper label{
+	font-weight:bold;
+}
+#example_wrapper #example_info{
+	font-weight: 500;
+}
+#example_length, #example_info{
+	float:left;
+}
+#example_info{
+	color:#666
+}
+#example_filter, #example_paginate{
+	float:right;
+}
+.paginate_button{
+	float:left;
+	margin-left: 5px;
+}
+#example_paginate span .paginate_button{
+	background: #dddddd82;
+    color: #000;
+    border: 1px solid #cacaca;
+    padding: 7px 10px;
+    height: 35px;
+}
+#example_previous, #example_next{
+	padding-top: 8px;
+	color:#666;
+}
+.btnedit{
+	color:#fff;
+	background:#1FB6EB;
+	height: 25px;
+	padding: 0px 12px;
+}
+.adddelSection{
+	float:left;
+	width:100%;
+	margin-bottom:15px;
+}
+.addBtn, .delBtn{
+	float:left;
+	padding:5px;
+	margin-right:5px;
+	color:#fff;
+	cursor:pointer;
+}
+.addBtn{
+ background: #8ec448;
+}
+.delBtn{
+	background: rgb(241, 76, 75);
+}
+.addSection{
+	float:left;
+	width:100%;
+	display:none;
+}
+#example_wrapper{
+	margin-top:20px;
+}
+.area-submit, .area-cancel{
+	background:#1FB6EB;
+	border:none;
+	color:#fff;
+}
+.area-submit:hover, .area-cancel:hover,.area-submit:focus, .area-cancel:focus, .area-submit:active, .area-cancel:active{
+	background:#1FB6EB;
+	border:none;
+	color:#fff;
+}
+
+
+

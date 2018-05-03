@@ -76,5 +76,35 @@ return [
     'captchaRequire'   => 'Captcha is required',
     'CaptchaWrong'     => 'Wrong captcha, please try again.',
     'roleRequired'     => 'User role is required.',
-
+	
+	'regionNameRequired' => 'Region is required.',
+	'regionNameTaken'  => 'Region Already added ',
+	'countryNameRequired'  => 'Country is required.',
+	'countrycodeNameRequired'  => 'Country Code is required.',
+	'countryNameTaken'  => 'Country Already added ',
+	'cityNameRequired'  => 'City Name is required.',
+	'cityNameTaken'  => 'City Already added ',
+'portNameRequired'  => 'Port Name is required.',
+	'portNameTaken'  => 'Port Already added ',
+	'portcodeNameRequired'  => 'Port Code Name is required.',
+	'portcodeNameTaken'  => 'Port Code Already added ',
+	
+	'sectionNameRequired'   => 'Section Name is required.',
+	'sectionIDRequired'  => 'Section Number/ID is required.',
+	'sectionIDTaken'  => 'Section Number/ID Already added.',
+	
+	'sectionNameRequired'   => 'Section Name is required.',
+	'sectionIDRequired'  => 'Section Number/ID is required.',
+	'sectionIDTaken'  => 'Section Number/ID Already added.',
+	
+	'subchapterRequired'   => 'Sub Chapter is required.',
+	'subchaptercodeRequired'  => 'Sub Chapter Code is required.',
+	'chapterNameRequired'  => 'Chapter is required.',
+	'chaptercodeNameRequired'  => 'Chapter Code is required.',
+	
+	
+	'surchargeNameRequired'  => 'Surcharge Name is required.',
+	'surchargeCodeRequired'  => 'Surcharge Code is required.',
+	'surchargedescriptionRequired'  => 'Surcharge Description is required.',
+	'surchargeCodeTaken'  => 'Surcharge Code Already added .',
 ];

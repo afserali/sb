@@ -1,0 +1,228 @@
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid rgba(30, 50, 101, 0.75);
+  left: 19%;
+  position: absolute;
+  top: -15px;
+}
+.login{
+  position: absolute;
+  width: 350px;
+  display: none;
+  right: 13%;
+  top: 50px;
+  background:rgba(30, 50, 101, 0.75);
+  border-radius:5px;
+}
+.welcomeTxt{
+	float:left;
+	width: 100%;
+	color:#fff;
+	text-align: center;
+	padding: 15px 0px;
+}
+.chck-text a{
+	color:#fff;
+}
+.chck-text a:hover{
+	color:#fff;
+}
+#sb-login{
+  	padding:30px 20px;
+  }
+ #sb-login > .input-group{
+   		margin-bottom: 15px;
+   }
+ #sb-login > .input-group > input{
+   		border-top-left-radius: 3px;
+    	border-bottom-left-radius: 3px;
+    	border: 0px solid;
+    	height: 35px;
+    	color:#000;
+   }
+   #sb-login > .input-group > .input-group-addon{
+   		background: #8EC448 !important;
+    	border: 0px;
+    	color: #fff;
+   }
+   .sb-loginbtn{
+   		width:100%;
+   		float:left;
+   }
+   .sb-login{
+   	    background: #8EC448 !important;
+   	    border:0px;
+   	    color:#fff;
+   	    width: 100%;
+   }
+   .sb-login:hover, .sb-login:active{
+       color: #fff;
+   }
+   #sb-login > .input-group > .chck-input > input[type="checkbox"]{
+   		display:block !important;
+   }
+   .chck-input{
+   		width: 6%;
+    	float: left;
+    	padding-top: 2px;
+   }
+   .chck-text{
+   		float: left;
+    	width: 80%;
+    	color: #fff;
+    	font-size: 12px;
+   }
+   .forget-txt{
+   		float: right;
+    	width: 100%;
+    	text-align: right;
+    	padding-right: 24px;
+    	padding-top: 0px;
+    	padding-bottom: 10px;
+    	color: #ccc;
+   }
+   .forget-txt p{
+   		color:#ccc;
+   }
+   #sb-login > .input-group >  label.error {
+    font-size: 13px !important;
+    font-weight: normal;
+    text-align: left;
+    float: left;
+    top: 8px;
+    left: 0px;
+    margin: 0px;
+    line-height:0px;
+    position: relative;
+    padding: 0px 5px;
+    color:red;
+  }
+  #frgtLinkLogin{
+  	display:none;
+  }
+  .submitClearDiv{
+	float:left;
+	width:100%;
+	margin-top:10px;
+} 
+.frgtSubBtn{
+   background: #90c54d;
+   border:1px solid #90c54d;
+   color:#fff;
+   float:left;
+   width:45%;
+}
+.frgtClrBtn{
+	background: #90c54d;
+   border:1px solid #90c54d;
+   color:#fff;
+   width: 45%;
+    margin-left: 31px;
+   float:left;
+}
+#forgetForm{
+	padding: 30px 20px;
+}
+ .hintBox{
+ 	float: left;
+    width: 25%;
+    margin-left: 15px;
+ }
+ .hintBtn{
+   width: 100%;
+   float: left;
+   background: #90c54d;
+   border:1px solid #90c54d;
+   color:#fff;
+ }
+ #forgetForm .divInput{
+ 	height:35px;
+ 	margin-bottom: 20px;
+ 	float: left;
+    width: 100%;
+ }
+ #forgetForm .divInput .inputGrp input{
+ 	border: 0px solid;
+ 	border-radius:4px;
+ }
+#forgetForm .divInput .secInput{
+	    width: 70%;
+}
+.forget-box{
+	display: none;
+}
+.inputGrp{
+  	float: left;
+  	width: 100%;
+  	height:35px;
+  }
+  .divInput > .inputGrp > input{
+  	float:left;
+  	width:87%;
+  	height:35px;
+  }
+  .iconDiv {
+    width: 13% !important;
+    float: right !important;
+    height: 35px !important;
+    padding-top: 9px; 
+    color:#fff;
+    background: #90c54d;
+     border:1px solid #90c54d; 
+    border-top-right-radius:4px !important;
+    border-bottom-right-radius:4px !important;
+ }
+ label.error {
+ 	color:red;
+ 	font-size: 13px;
+}
+#frgtLinkForget, #frgtLinkLogin{
+	cursor: pointer;
+}
+.fbbgcolor{
+    background: #3A559F;
+    border-radius: 50%;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    border:2px solid #fff;
+    padding-left: 10px;
+    padding-top: 6px;
+    margin-right: 10px;
+}
+.twitbgcolor{
+     background: #1CB7EB;
+    border-radius: 50%;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    border:2px solid #fff;
+    padding-left: 8px;
+    padding-top: 5px;
+     margin-right: 10px;
+}
+.goobgcolor{
+     background: #FF0000;
+    border-radius: 50%;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    border:2px solid #fff;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+.fbbgcolor i:hover, .twitbgcolor i:hover, .goobgcolor i:hover,
+.fbbgcolor i:active, .twitbgcolor i:active, .goobgcolor i:active,
+.fbbgcolor i:focus, .twitbgcolor i:focus, .goobgcolor i:focus{
+    color:#fff !important;
+}
+.orloginTxt{
+  color:#fff;
+  float: left;
+  width: 100%;
+  padding-top: 15px;
+}

@@ -38,6 +38,7 @@ class User extends Authenticatable
         'first_name',
         'last_name',
         'email',
+		
         'password',
         'activated',
         'token',
@@ -47,6 +48,8 @@ class User extends Authenticatable
         'admin_ip_address',
         'updated_ip_address',
         'deleted_ip_address',
+		'mobile',
+		'countrycode',
     ];
 
     /**

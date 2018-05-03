@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.before')
 
 @section('template_title')
 	{{ Lang::get('titles.activation') }}

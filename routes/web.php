@@ -12,10 +12,13 @@
 | Middleware options can be located in `app/Http/Kernel.php`
 |
 */
-
+Route::get('search/autocomplete', 'MasterManagementController@autocomplete');
 // Homepage Route
 Route::get('/', 'WelcomeController@welcome')->name('welcome');
+// Homepage Route
+Route::get('/index', 'WelcomeController@welcome')->name('welcome');
 
+Route::post('/index', ['as'=>'getaquote','uses'=>'WelcomeController@getaquote']);
 // Authentication Routes
 Auth::routes();
 
@@ -43,13 +46,10 @@ Route::group(['middleware' => ['auth', 'activated', 'activity']], function () {
     // Activation Routes
     Route::get('/activation-required', ['uses' => 'Auth\ActivateController@activationRequired'])->name('activation-required');
     Route::get('/logout', ['uses' => 'Auth\LoginController@logout'])->name('logout');
-});
-
-// Registered and Activated User Routes
-Route::group(['middleware' => ['auth', 'activated', 'activity', 'twostep']], function () {
 
     //  Homepage Route - Redirect based on user role is in controller.
     Route::get('/home', ['as' => 'public.home',   'uses' => 'UserController@index']);
+	
 
     // Show users profile - viewable by other users.
     Route::get('profile/{username}', [
@@ -59,7 +59,7 @@ Route::group(['middleware' => ['auth', 'activated', 'activity', 'twostep']], fun
 });
 
 // Registered, activated, and is current user routes.
-Route::group(['middleware' => ['auth', 'activated', 'currentUser', 'activity', 'twostep']], function () {
+Route::group(['middleware' => ['auth', 'activated', 'currentUser', 'activity']], function () {
 
     // User Profile and Account Routes
     Route::resource(
@@ -93,10 +93,11 @@ Route::group(['middleware' => ['auth', 'activated', 'currentUser', 'activity', '
 
     // Route to upload user avatar.
     Route::post('avatar/upload', ['as' => 'avatar.upload', 'uses' => 'ProfilesController@upload']);
+	 
 });
 
 // Registered, activated, and is admin routes.
-Route::group(['middleware' => ['auth', 'activated', 'role:admin', 'activity', 'twostep']], function () {
+Route::group(['middleware' => ['auth', 'activated', 'role:admin', 'activity']], function () {
     Route::resource('/users/deleted', 'SoftDeletesController', [
         'only' => [
             'index', 'show', 'update', 'destroy',
@@ -110,10 +111,85 @@ Route::group(['middleware' => ['auth', 'activated', 'role:admin', 'activity', 't
         ],
         'except' => [
             'deleted',
+        ],  ]);
+		 Route::resource('surcharges', 'SurchargeManagementController', [
+        'names' => [
+            'index'   => 'surcharges',
+            'destroy' => 'surcharges.destroy',
         ],
+        'except' => [
+            'deleted',
+        ],  ]);
+		 Route::resource('getquotes', 'GetaQuoteViewController', [
+        'names' => [
+            'index'   => 'getquotes',
+            'destroy' => 'getquotes.destroy',
+        ],
+        'except' => [
+            'deleted',
+        ],  ]);
+		 Route::resource('rates', 'RateManagementController', [
+        'names' => [
+            'index'   => 'rates',
+            'destroy' => 'rates.destroy',
+        ],
+        'except' => [
+            'deleted',
+        ],  ]);
+		
+  Route::resource('master', 'MasterManagementController', [
+        'names' => [
+            'index'   => 'master',
+            'destroy' => 'master.destroy',
+        ],
+        
     ]);
-    Route::post('search-users', 'UsersManagementController@search')->name('search-users');
+	Route::resource('commodity', 'CommodityManagementController', [
+        'names' => [
+            'index'   => 'commodity',
+            'destroy' => 'commodity.destroy',
+        ],
+         'except' => [
+            'deleted',
+        ],  	
+    ]);
+    Route::post('storesection', 'CommodityManagementController@storesection');
+	 Route::put('editsection/{id}', 'CommodityManagementController@updatesection');
+	
+	Route::get('showsection', 'CommodityManagementController@showsection');
+	Route::delete('showsection/{id}', 'CommodityManagementController@deletesection');
+	Route::get('editsection/{id}', 'CommodityManagementController@editsection');
+	
+	Route::get('showchapter', 'CommodityManagementController@showchapter');
 
+Route::get('showsubchapter', 'CommodityManagementController@showsubchapter');
+	
+	Route::post('storechapter', 'CommodityManagementController@storechapter');
+	Route::post('storesub', 'CommodityManagementController@storesub');
+		Route::post('storecommodities', 'CommodityManagementController@storecommodities');
+	Route::post('storecountry', 'MasterManagementController@storecountry');
+	Route::post('storecity', 'MasterManagementController@storecity');
+	Route::post('storeport', 'MasterManagementController@storeport');
+	Route::get('showcity', 'MasterManagementController@showcity');
+	Route::get('showcountry', 'MasterManagementController@showcountry');
+	Route::get('showregion', 'MasterManagementController@showregion');
+	Route::get('editregion/{id}', 'MasterManagementController@editregion');
+	Route::put('editregion/{id}', 'MasterManagementController@updateregion');
+	Route::get('editcountry/{id}', 'MasterManagementController@editcountry');
+	Route::put('editcountry/{id}', 'MasterManagementController@updatecountry');
+	
+	Route::get('editcity/{id}', 'MasterManagementController@editcity');
+	Route::put('editcity/{id}', 'MasterManagementController@updatecity');
+	
+	Route::get('editport/{id}', 'MasterManagementController@editport');
+	Route::put('editport/{id}', 'MasterManagementController@updateport');
+	
+	//Delete Master
+	Route::delete('showregion/{id}', 'MasterManagementController@deleteregion');
+	Route::delete('showcountry/{id}', 'MasterManagementController@deletecountry');
+	Route::delete('showcity/{id}', 'MasterManagementController@deletecity');
+
+	
     Route::resource('themes', 'ThemesManagementController', [
         'names' => [
             'index'   => 'themes',
@@ -122,8 +198,158 @@ Route::group(['middleware' => ['auth', 'activated', 'role:admin', 'activity', 't
     ]);
 
     Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+    Route::get('php', 'AdminDetailsController@listPHPInfo');
     Route::get('routes', 'AdminDetailsController@listRoutes');
     Route::get('active-users', 'AdminDetailsController@activeUsers');
 });
 
-Route::redirect('/php', '/phpinfo', 301);
+//All Pages
+
+Route::get('/fclRateSearch', function () {
+	return view('fclRates');
+});
+
+Route::get('/lclRateSearch', function () {
+	return view('lclRates');
+});
+
+Route::get('/specialCargo', function () {
+	return view('specialCargo');
+});
+
+Route::get('/sailingSchedule', function () {
+	return view('sailSchedule');
+});
+
+Route::get('/contractRates', function () {
+	return view('contractRates');
+});
+
+Route::get('/portTariff', function () {
+	return view('portTariff');
+});
+
+Route::get('/localCharges', function () {
+	return view('localCharge');
+});
+
+Route::get('/inlandTariff', function () {
+	return view('inlandTariff');
+});
+
+Route::get('/detentionDemorrage', function () {
+	return view('detentDemo');
+});
+
+Route::get('/vesselBerthing', function () {
+	return view('vesselBerth');
+});
+
+Route::get('/tracking', function () {
+	return view('tracking');
+});
+
+Route::get('/scacPortCountry', function () {
+	return view('scacPort');
+});
+
+
+Route::get('send-main', 'HomeController@sendMail');
+
+
+Route::get('/cfsOperators', function () {
+	return view('cfsOperators');
+});
+
+Route::get('/stevedoringMarineInsurance', function () {
+	return view('steveMarine');
+});
+
+Route::get('/imdg', function () {
+	return view('dgrPacking');
+});
+
+Route::get('/vesselCharter', function () {
+	return view('vesselCharter');
+});
+
+Route::get('/aboutUs', function () {
+	return view('aboutUs');
+});
+
+Route::get('/siteMap', function () {
+	return view('sitemapNew');
+});
+
+Route::get('/termsOfUse', function () {
+	return view('termofuseNew');
+});
+
+Route::get('/privacyCookiePolicy', function () {
+	return view('privacyCookieNew');
+});
+
+Route::get('/disclaimer', function () {
+	return view('disclaimNew');
+});
+
+Route::get('/allRightReserved', function () {
+	return view('allRightnew');
+});
+
+Route::get('/fees', function () {
+	return view('fees');
+});
+
+Route::get('/mode', function () {
+	return view('mode');
+});
+
+Route::get('/accountInformation', function () {
+	return view('accountInfrm');
+});
+
+Route::get('/advertisement', function () {
+	return view('advert');
+});
+
+Route::get('/faqs', function () {
+	return view('faqNew');
+});
+Route::get('/contactUs', function () {
+	return view('contactUs');
+});
+
+Route::get('/feedback', function () {
+	return view('feedbackNew');
+});
+
+Route::get('/workWithUs', function () {
+	return view('workWithus');
+});
+
+Route::get('/signUp', function () {
+	return view('signUp');
+});
+
+Route::get('/dockNew', function () {
+	return view('dockNew');
+});
+
+Route::get('/icdNew', function () {
+	return view('icdNew');
+});
+
+Route::get('searchajax', ['as'=>'searchajax','uses'=>'AjaxAutocompleteController@searchResponse']);
+Route::get('importExport', 'MaatwebsiteDemoController@importExport');
+Route::get('downloadExcel/{type}', 'MaatwebsiteDemoController@downloadExcel');
+Route::post('importExcel', 'MaatwebsiteDemoController@importExcel');
+Route::get('/sitemap', 'SitemapController@index');
+Route::get('/sitemap/posts', 'SitemapController@posts');
+Route::get('/sitemap/categories', 'SitemapController@categories');
+Route::get('/sitemap/podcasts', 'SitemapController@podcasts');
+Route::get('/sitemap.xml', 'SitemapController@index');
+Route::get('ajaxdata', 'MasterManagementController@index')->name('ajaxdata');
+Route::get('ajaxdata/getdata', 'MasterManagementController@getdata')->name('ajaxdata.getdata');
+
+

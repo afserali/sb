@@ -1,0 +1,42 @@
+.infoSection{
+	float: left;
+    width: 65%;
+    border: 1px solid #ccc;
+    margin: 30px 172px;
+    padding: 20px 20px;
+}
+.infoHead{
+	text-align:center;
+	color: #1c3365;
+	font-size:15px;
+	font-weight:700;
+	padding-top: 22px;
+}
+.infoSection .input-group{
+	width:100%;
+	float:left;
+}
+.infoSection .input-group select, .infoSection .input-group input{
+	width:100%;
+	float:left;
+	height: 41px;
+    border-radius: 4px !important;
+	padding-left:10px !important;
+}
+.getDtlbtn{
+	color:#fff;
+	background:#8ec448;
+	float: left;
+	width: 100%;
+}
+.getDtlbtn:hover{
+	color:#fff;
+}
+.getDtlsection{
+	float:left;
+	width:100%;
+	margin-top:10px;
+}
+.getDtlsection{
+	display:none;
+}

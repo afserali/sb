@@ -1,0 +1,650 @@
+body {
+	background-color: #e8ebf0; font-family:'Open Sans';
+}
+
+h1, h2, h3, h4, h5, h6, li, p, ul { border: 0; margin: 0; padding: 0;}
+ol, ul {list-style: none;}
+li {display: list-item;}
+
+
+.sbbgImg{
+	background:url(../images/seabanners2.jpg) no-repeat;
+	background-size:100% 100%;
+}
+.side_line_bg {
+	border-right:1px solid #f1f1f1;
+	background: #f8f8f8;
+	width:194px;
+	height:53px;
+	float:left;
+	padding-right:0px !important;
+	
+}
+.side_line_bg1{
+	border-right:1px solid #f1f1f1;
+	background: #f8f8f8;
+	width:194px;
+	height:53px;
+	float:left;
+	padding-right:0px !important;
+	
+}
+.sbRightHeader{
+	float: right;
+    margin-top: 0px;
+    margin-right: 0px;
+    -webkit-margin-after: 0em !important;
+}
+.logo_bg {
+	width:119px;
+	height:39px;
+	float:left;
+	padding:5px;
+}
+.fa-bars:before {
+	color:#3f3f3f;
+}
+.dashboard-bg {
+	/* background:#ebeff4; */
+	min-height:75px;
+	width:100%;
+	float:left;
+	/* border-bottom:1px solid #e2e5eb; */
+}
+.top_ads_bg {
+	border:1px solid #dbddde;
+	margin-top:10px;
+	width:100%;
+}
+.full_content_bg {
+	margin-bottom:25px;
+}
+.content_tab_bg {
+	background-color:#fff;
+	border:1px solid #e1e1e1;
+	width:100%;
+	height:308px;
+	float:left;
+	margin-top: 25px;
+}
+.rates_content_tab_bg {
+	background-color:#fff;
+	border:1px solid #e1e1e1;
+	width:100%;
+	height:auto;
+	float:left;
+	margin-top: 25px;
+}
+.search_full_bg {
+	float:right;
+	position:absolute;
+    bottom: 0px;
+    right: 30px;
+    /* top: 10px; */
+	/* margin-right:20px; */
+}
+
+/* Sidebar Toggle style */
+.navbar-brand[data-toggle="sidebar"] {
+    color: #000;
+}  
+
+.navbar-brand[data-toggle="sidebar"]:focus, .navbar-brand[data-toggle="sidebar"]:hover {
+    color: #00A095;
+}
+.navbar-default {
+	background: #3d5e8b;
+    border:none !important;
+}
+.navbar {
+	margin-bottom:0px;
+}
+.footer_bg {
+	width:100%;
+	height:auto;
+	float:left;
+	background-color:#2c2c2c;
+	color:#fff;
+	font-size:13px;
+	padding:5px 0px 5px 10px;
+}
+input[type=search] { 
+	outline:none;
+}
+/*yogapriya Added*/
+::-webkit-input-placeholder{
+		color:#2c3a5d !important;
+        font-weight:600;
+}
+
+.sbNotify{
+	float: left;
+    width: 50px;
+    vertical-align: middle;
+    height: 50px;
+    display: inline-block!important;
+}
+.sbProfile{
+	width:140px !important;
+	padding: 13px;
+    color: #fff;
+}
+.sbRightHeader li a{
+	padding: 13px;
+    float: left;
+    width: 50px;
+    text-align: center;
+    color: #fff;
+}
+.sbNotify a i{
+	font-size:20px;
+}
+.sbUsername{
+	float:left;
+}
+.sbUserimg{
+	float: left;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: -6px;
+	padding:2px;
+}
+.sbUserPic{
+	border-radius: 50%;
+    width: 100%;
+}
+.headerIcon{
+	float: right;
+    background: #e4e4e4;
+    height: 53px;
+}
+.minBg{
+	position: absolute;
+    top: 0%;
+    width: 54px;
+    right: 0px;
+}
+.minListlogo{
+	margin-bottom: 12px;
+}
+.navbar-brand{
+	margin-left:0px !important;
+}
+.ratesSection{
+	background:#edebec;
+	border-radius:8px;
+	width:100%;
+	float:left;
+	margin-top: 65px;
+    margin-bottom: 50px;
+}
+.fcllclHeading{
+	float:left;
+	width:100%;
+}
+.fclHeading{
+	float:left;
+	padding: 10px;
+	font-weight:700;
+	color:#fff;
+	cursor:pointer;
+}
+.lclHeading{
+	float:left;
+	padding: 10px;
+	margin-left:5px;
+	font-weight:700;
+	color:#1c3365;
+	cursor:pointer;
+}
+.fclSection{
+	float:left;
+	width:100%;
+}
+.inputSection{
+	float:left;
+	width:100%;
+	padding: 10px 10px;
+}
+.inputSection .input-group input, .modal-body .input-group input, .modal-body .boxField .input-group input{
+	border-radius: 3px;
+    border: 1px solid #ccc;
+    height: 41px;
+	border-right:none;
+}
+.inputSection .input-group .input-group-addon, .modal-body  .input-group .input-group-addon, .modal-body  .boxField  .input-group .input-group-addon{
+	border-left:none;
+	background:#fff !important;
+}
+.serviceSection{
+	float:left;
+	width:100%;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.sbServices{
+	float:left;
+	width:100%;
+}
+.clearanceList, .transportList, .warehouseList, .exworksList{
+	float:left;
+}
+.sbServices li input[type="checkbox"]{
+	position: absolute;
+	right: 9000px;
+}
+.sbServices li  input[type="checkbox"] + .label-text:before{
+	content: "\f096";
+	font-family: "FontAwesome";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing:antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 18px;
+    color: #8ec448;
+}
+.sbServices li  input[type="checkbox"]:checked + .label-text:before{
+	content: "\f14a";
+	color: #8ec448;
+}
+.sbServices li  input[type="checkbox"]:disabled + .label-text{
+	color: #aaa;
+}
+.sbServices li  input[type="checkbox"]:disabled + .label-text:before{
+	content: "\f0c8";
+	color: #ccc;
+}
+/* .searchCol{ */
+	 /* text-align: center; */
+/* } */
+.searchBtn{
+		background:#8ec448;
+		color:#fff;
+		padding: 15px 70px;
+		float: right;
+}
+.addServHead{
+	padding-bottom:20px;
+	color:#1c3365;
+    font-weight: 700;
+    font-size: 15px;
+}
+.totalText{
+	padding-bottom: 20px;
+    float: left;
+    width: 100%;
+    text-align: right;
+}
+.totalTitle{
+	/* float:left; */
+	text-align:right;
+	width:50%;
+	font-weight:700;
+	color:#1c3365;
+}
+.totalAmt{
+	/* float:left; */
+	text-align:left;
+	width:50%;
+	color:#1c3365;
+}
+.shippingHead{
+	color:#1c3365;
+	padding-bottom: 10px;
+    padding-left: 10px;
+	padding-top: 40px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.fclText{
+	float:right;
+	margin-top: 4px;
+}
+.lclText{
+	float:right;
+	margin-top: 4px;
+}
+.lclSection{
+	display:none;
+}
+.weightIp{
+	border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+.cbmIp{
+	border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: 0px;
+}
+.dimenIp{
+	height:41px;
+}
+.dimenIp input{
+	border-radius: 3px;
+    height: 41px;
+}
+.form-control[readonly]{
+	background:#fff !important;
+}
+.newprofileDiv{
+	position: absolute;
+    width: 350px;
+    float: left;
+    height: 200px;
+    background: #fff;
+    right: 0px;
+    top: 50px;
+    display:none;
+}
+.settingsProfileBG{
+	background: #3d5e8b;
+	float:left;
+	width:100%;
+	min-height:140px;
+}
+.settingsProfile{
+	
+	float:left;
+	width:100%;
+	padding: 3% 39%;
+}
+.userImageround{
+	border: 3px solid #2c3a5da8;
+    background: #fff;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+}
+.profileSignout{
+	width:100%;
+	float: left;
+	margin-top:16px;
+}
+.newProfilebox{
+	float: left;
+    width: 50%;
+    text-align: center;
+}
+.newProfileText{
+	background: none;
+    border: 1px solid #ccc;
+    width: 80px;
+    padding: 5px 0px;
+	color:#000;
+}
+.newSignOutbox{
+	float: left;
+    width: 50%;
+    text-align: center;
+}
+.newSignOutTxt{
+	background: none;
+    border: 1px solid #ccc;
+    width: 80px;
+    padding: 5px 0px;
+	color:#000;
+}
+.nameRole{
+	width:100%;
+	float:left;
+	text-align: center;
+	color: #fff;
+    padding-top: 40px;
+}
+.boxuserName{
+	float:left;
+	width:100%;
+	 font-size: 17px;
+}
+.boxuserRole{
+	float:left;
+	width:100%;
+	font-size: 15px;
+}
+.userHeaderImage img{
+	width: 100%;
+    height: 100%;
+    float: left;
+    border-radius: 50%;
+}
+.calend_back, .calend_back1 {
+    float: right;
+    background: #000000;
+    width: 83px;
+    height: 10px;
+    margin: -20px -8px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.calend_back1{
+	display:none;
+}
+.fclBox{
+	background: #8ec448;
+    padding: 8px 10px;
+	margin-top: -20px;
+    position: absolute;
+}
+.modal-dialog {
+	width: 850px;
+}
+.boxField, .fclboxField{
+	float:left;
+	width:100%;
+	margin-top:10px;
+}
+.modal-body .boxField .input-group input{
+	width:100%;
+	border:none;
+	padding-left: 10px;
+}
+.modal-body .input-group input, .modal-body  .input-group .input-group-addon{
+	border:none;
+}
+.modal-content{
+	background:#edebec;
+    float: left;
+}
+.modal-body{
+	float: left;
+}
+.modal-body .radioCalc  input[type="radio"]{
+	position: absolute;
+	right: 9000px;
+}
+.modal-body .radioCalc input[type="radio"] + .label-text:before{
+	content: "\f10c";
+	font-family: "FontAwesome";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing:antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 5px;
+	font-size:20px;
+	color: #8ec448;
+}
+
+.modal-body .radioCalc input[type="radio"]:checked + .label-text:before{
+	content: "\f192";
+	color: #8ec448;
+	font-size:20px;
+	/* animation: effect 250ms ease-in; */
+}
+
+.modal-body .radioCalc input[type="radio"]:disabled + .label-text{
+	color: #8ec448;
+	
+}
+
+.modal-body .radioCalc input[type="radio"]:disabled + .label-text:before{
+	content: "\f111";
+	color: #8ec448;
+}
+.radioCalc{
+	float: left;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+	padding-left: 12px;
+}
+.add_field_button, .fcladd_field_button{
+background:none;
+border:none;
+}
+.add_field_button i, .fcladd_field_button i{
+	color:#2c3a5d;
+}
+.remove_field i, .fclremove_field i{
+	color:#2c3a5d;
+}
+.remove_field{ 
+	 position: absolute; 
+     right: 135px;
+    bottom: -2px;
+ } 
+.addCol{
+	padding:0;
+}
+.totCol{
+	font-size: 12px;
+    font-weight: 600;
+    padding-top: 11px;
+    padding-left: 10px;
+    float: left;
+}
+.addIcon{
+	position: absolute;
+    left: -17px;
+    top: 9px;
+}
+.fcladdIcon{
+	position: absolute;
+    left: -5px;
+    top: 9px;
+}
+
+.addTotCol{
+	font-size: 12px;
+    font-weight: 600;
+	padding-top: 11px;
+    padding-left: 10px;
+    float: right;
+}
+.lclpopTot{
+	float:right;
+	text-align:right;
+	color:#2c3a5d;
+	font-size:13px;
+	font-weight:600;
+	margin-top:10px;
+}
+.applyBtn{
+	float:right;
+	background:#8ec448;
+	color:#fff;
+	padding: 8px 45px;
+    margin-top: 10px;
+}
+.modal-body .fclboxField .input-group input{
+	width:100%;
+	border:none;
+	padding-left: 10px;
+}
+.fclremove_field{
+	position: absolute;
+    right: 52px;
+    bottom: -29px;
+}
+.sidemenu_text{
+	padding-top: 6px;
+    width: 80%;
+    float: right;
+}
+.iconSide{
+	width: 20%;
+    float: left;
+}
+.modal-body .input-group select, .fclboxField .input-group select{
+	background: #fff;
+    border: none;
+    height: 41px;
+    border-radius: 3px;
+	float: left;
+    width: 100%;
+	color:#2c3a5d;
+font-weight:600;
+}
+.contBox, .contBox1, .contBox2{
+	background: #fff;
+    border: none;
+    height: 41px;
+    border-radius: 3px;
+	width:100%;
+	float:left;
+	color:#2c3a5d;
+    text-align: center;
+    padding-top: 10px;
+   font-weight:600;
+}
+.boxDiv{
+	float:left;
+	width:100%;
+    
+}
+.fclinput_fields_wrap{
+	width:100%;
+	float:left;
+}
+.modal-body  .fclinput_fields_wrap .input-group , .fclboxField .input-group{
+	width:100%;
+	float:left;
+}
+.fclbox1{
+display:none;
+float:left;
+}
+.fclbox2{
+float:left;
+}
+.cubeIcon{
+	float: left;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+.label-text{
+	color:#2c3a5d;
+	font-weight:600;
+}
+
+
+.topIcondiv{
+	float: left;
+    width: 33%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 17px;
+}
+#showTop{
+	cursor:pointer;
+}
+#showTop i{
+	font-size:18px;
+}
+    
+    
